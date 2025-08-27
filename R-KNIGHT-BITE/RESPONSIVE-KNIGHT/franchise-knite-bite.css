@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(26, 23, 23, 0.12);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito";
+    position: fixed;
+    z-index: 4;
+ }
+ .navbar img{
+    width: 200px;
+    height: 80px;
+    margin: 5px;
+    color: black;
+    margin: 0 100px;
+    background-repeat: no-repeat;
+ }
+
+ .nav-content{
+    display: flex;
+    align-items: center;
+ }
+.navlinks{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 20px;
+    list-style: none;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: white;
+}
+.navlinks li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+.navlinks li a:hover{
+        color: #1ee4e4;
+        transform: scale(1.1);
+ }
+
+ .franchise-container{
+    width: 100%;
+    height: 118vh;
+    background-size: 100% 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+    position: relative;
+ }
+
+ .franchise-video{
+    z-index: 1;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+ }
+
+
+ .franchise-content{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 0 0 / 25%);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.franchise-content h1{
+   position: absolute;
+   top: 300px;
+   font-size: 6rem;
+   color: white;
+}
+
+.franchise-content h3{
+    font-size: 2rem;
+    color: white;
+}
+
+.franchise-button{
+    position: relative;
+}
+
+.franchise-button button{
+   position: absolute;
+   top: 60px;
+   left: -90px;
+   height: 60px;
+   width: 200px;
+   border-radius: 30px;
+   border: none;
+   outline: none;
+   background-color: rgb(233, 124, 142);
+   color: white;
+   font-size: 1rem;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.franchise-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    top: 160px;
+    left: 0;
+
+}
+
+.franchise-icon .play-btn{ 
+    height: 40px;
+    width: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.franchise-icon span{
+    font-size: 18px;
+}
+
+.franchise-mission{
+    font-family: sans-serif;
+    margin: 60px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.franchise-mission h1{
+    font-size: 2rem;
+}
+
+.franchise-mission p{
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+hr{
+    margin:20px auto;
+    height: 3px;
+    width: 90%;
+    background-color: rgb(156, 24, 156);
+}
+
+
+.frenchise-benifts h1{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 50px 0px;
+}
+
+.benifits-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 40px;
+    padding: 0px 150px;
+
+}
+
+.benifits-content img{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.benifits-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.benifits-data p{
+    font-size: 1rem;
+}
+
+.frenchise-apply h1{
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.frenchise-apply p{
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.frenchise-apply img{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    height: 550px;
+    width: 850px;
+}
+
+.frenchise-apply button{
+    cursor: pointer;
+    display: block;
+    margin: 60px auto;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #FF5672;
+    color: white;
+    border: none;
+}
+
+.frenchsie-query h1{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 34px;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+.frenchise-content{
+    display: flex;
+    justify-content: center;
+}
+
+.frenchise-content img{
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.frenchsie-query-data{
+    display: flex;
+    align-items: center;
+    margin-right:50px;
+    margin-bottom: 40px;
+}
+
+.frenchsie-query-data p{
+    font-family: "Nunito";
+    font-weight: normal;
+    font-size: 20px;
+    transition: all .8s ease;
+}
+
+.frenchsie-query-data p:hover{
+    color: #FF5672;
+    cursor: pointer;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff6f6;
+    font-family: 'Nunito';
+    background: linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+}
+
+
+@media (max-width:576px){
+
+
+    .navbar{
+        width: 100%;
+        height: 120px;
+        background-color: rgba(26, 23, 23, 0.22);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navlinks{
+        margin: auto;
+    }
+
+    .navlinks li a{
+        font-size: 1rem;
+    }
+
+    .franchise-video{
+        display: none;
+    }
+
+    .franchise-container{
+        background: url(../assets/KNIGHT-BITE-IMAGE/franchise-video-bg.png) no-repeat center/cover;
+    }
+
+    .franchise-content{
+        height: 100vh;
+        /* background-color: yellow; */
+        padding: 0px 100px;
+        position: relative;
+    }
+
+    .franchise-content h1{
+        position: absolute;
+        top: 200px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .franchise-content h3{
+        position: absolute;
+        top: 320px;
+        padding: 1.8rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .franchise-content .franchise-button{
+        position: absolute;
+        top: 380px;
+        margin: auto;
+    }
+
+    .franchise-button button{
+        height: 40px;
+        width: 150px;
+        font-size: .8rem;
+    }
+
+    .franchise-content .franchise-icon{
+        position: absolute;
+        top: 540px;
+        left: 100px;
+    }
+
+    .franchise-mission{
+        padding: 0px 30px;
+    }
+
+    .franchise-mission h1{
+        font-size: 1.7rem;
+    }
+
+    .franchise-mission p{
+        font-size: 1rem;
+    }
+
+    .frenchise-benifts{
+        padding: 0px 30px;
+    }
+
+    .frenchise-benifts h1{
+        font-size: 1.5rem;
+    }
+
+    .benifits-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+        column-gap: 40px;
+        padding: 0px 150px;
+    }
+
+    .benifits-content img{
+        height: 55px;
+        width: 55px;
+        cursor: pointer;
+    }
+
+    .benifits-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .benifits-data h3{
+        font-size: 1rem;
+    }
+
+    .benifits-data p{
+        font-size: .8rem;
+    }
+
+    .frenchise-apply{
+        padding: 0px 40px;
+    }
+
+    .frenchise-apply img{
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        height: 200px;
+        width: 290px;
+    }
+
+    .frenchise-apply button{
+        cursor: pointer;
+        display: block;
+        margin: 60px auto;
+        height: 40px;
+        width: 150px;
+        font-size: 1rem;
+        border-radius: 30px;
+        background-color: #FF5672;
+        color: white;
+        border: none;
+    }
+
+    hr{
+        margin:20px auto;
+        height: 3px;
+        width: 80%;
+        background-color: rgb(156, 24, 156);
+    }
+
+    .frenchsie-query h1{
+        text-align: center;
+        margin: 40px auto;
+        font-size: 1.8rem;
+        font-family: "Nunito";
+        font-weight: bold;
+    }
+
+    .frenchise-content{
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        /* justify-content: center; */
+        
+    }
+
+    .frenchise-content img{
+        margin-right: 15px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .frenchise-content p{
+        font-size: 1rem;
+    }
+
+    .frenchsie-query-data{
+        display: flex;
+    }
+
+    .copyright p{
+        font-size: .6rem;
+        font-weight: bold;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

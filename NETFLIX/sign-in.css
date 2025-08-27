@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    height: 110vh;
+    /* background: url(./assets/image/Netflix-bg-edit-img.jpg) no-repeat center/cover;
+    */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('./assets/image/Netflix-bg-edit-img.jpg') no-repeat center/cover;
+}
+
+.nav-bar{
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.nav-bar img{
+    margin-left: 9rem;
+    height: 5rem;
+    width: 12rem;
+}
+
+.sign-in{
+    background-color: rgba(1, 1, 1,0.7);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 650px;
+    width: 500px;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sign-in h1{
+    color: white;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.input-container input{
+    padding: 1.2rem;
+    color: white;
+    outline: none;
+    border: 1px solid rgb(248, 244, 244);
+    border-radius: 5px;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-container input::placeholder{
+    color: white;
+    font-size: 1rem;
+    transition: 1s all;
+}
+
+.input-container input:hover::placeholder{
+    transform: translateY(-10px);
+    opacity: .8;
+}
+
+.input-container .btn{
+    padding: .8rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s all;
+}
+
+.input-container .btn:hover{
+    background-color: rgb(229, 7, 7);
+}
+
+.input-container .code-btn{
+    cursor: pointer;
+    background-color: rgb(54, 51, 51);
+}
+
+.input-container .code-btn:hover{
+    background-color: rgb(37, 36, 36);
+}
+
+.input-container .or{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+.input-container .forget-password{
+    color: white;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.input-container .forget-password:hover{
+    opacity: .8;
+}
+
+.input-container .checkbox{
+    display: flex;
+    gap:1rem;
+    color: white;
+    margin-bottom: 1rem;
+    
+}
+
+.input-container input[type="checkbox"]{
+    width: 1.3rem;
+    height: 1.3rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+.input-container .new-text{
+    color: rgb(204, 201, 201);
+    transition: 1.5s all;
+
+}
+
+.input-container .new-text a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-container .new-text a:hover{
+    text-decoration: underline;
+}
+
+.input-container .protected-text{
+    color: rgb(154, 144, 144);
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.input-container .learn-more{
+    color: rgb(96, 96, 246);
+    font-size: .8rem;
+}
+
+/* FOOTER SECTION */
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(36, 34, 34);
+    padding: 3rem 8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.footer p{
+    margin-left: .7rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: .7;
+}
+
+.footer .footer-list{
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer-list a{
+    color: white;
+    opacity: .7;
+    font-size: 1rem;
+}
+
+.footer .language-drop-down{
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    background: none;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+@media (max-width:576px){
+    header{
+        background:none;
+        height: 120vh;
+        background-color: black;
+    }
+
+    .nav-bar {
+        width: 100%; 
+    }
+
+    .nav-bar img{
+        height: 3rem;
+        width: 9rem;
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+    }
+
+    .sign-in{
+        width: 100%;
+        background: none;
+        padding: 2rem 1.5rem;
+
+    }
+
+    .sign-in h1{
+        font-size: 2rem;
+    }
+
+    .footer{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(36, 34, 34);
+        padding: 3rem 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .footer p{
+        margin-left: .7rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        opacity: .7;
+    }
+
+    .footer .footer-list{
+        width: 80%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 2rem;
+        column-gap: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-list a{
+        color: white;
+        opacity: .7;
+        font-size: 1rem;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

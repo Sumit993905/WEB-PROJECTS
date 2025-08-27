@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('./assets/image/Netflix-bg-edit-img.jpg') no-repeat center/cover;
+
+}
+
+.nav-bar{
+    padding: 1rem 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a{
+    text-decoration: none;
+}
+
+.nav-bar img{
+    margin-left: 4rem;
+    height: 5rem;
+    width: 12rem;
+}
+
+.nav-bar .nav-content{
+    display: flex;
+    gap: 1rem;
+    margin-right: 7rem;
+}
+
+.nav-bar .language-drop-down{
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    background: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.nav-bar .sign-in-btn{
+    padding:.6rem 1rem;
+    width: 7rem;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.nav-bar .sign-in-btn:hover{
+    background-color: rgb(234, 9, 9);
+}
+
+.banner-text{
+    height: 25rem;
+    width: 44rem;
+    padding: .8rem 3rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.banner-text h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.banner-text h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner-text p{
+    margin-top: 1.5rem;
+    margin-bottom: .6rem;
+}
+
+.banner-text .banner-input{
+    display: flex;
+    gap: .6rem;
+}
+
+.banner-text .banner-input input{
+    padding: .8rem;
+    width: 20rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background: transparent;  
+}
+
+.banner-input input::placeholder{
+    color: white;
+    opacity: .7;
+    font-size: 1rem;
+    transition: 1s all;
+}
+
+.banner-input input:hover::placeholder{
+    transform: translateY(-10px);
+}
+
+.banner-input .get-start{
+    padding: .8rem;
+    width: 15rem;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: .4s all;
+    cursor: pointer;
+}
+
+.banner-input .get-start:hover{
+    background-color: rgb(221, 18, 18);
+}
+
+.main-content{
+    background-color: black;
+    color: white;
+    padding: 0rem 8rem;
+}
+
+/* MOVIE SECTION */
+
+.movie-section{
+    padding: 1rem;
+}
+
+.movie-section h1{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.movie-container{
+    display: flex;
+    gap: 3rem;   
+}
+
+.movie-container .movie-img{
+    transition: .7s all;
+}
+
+.movie-container .movie-img:hover{
+    transform: scale(1.1);
+}
+
+.movie-container .movie-img{
+    position: relative;
+}
+
+.movie-container .movie-number{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* REASON SECTION */
+
+.reason-section{
+   padding: 1rem;
+}
+
+.reason-section .reason-container{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.reason-section h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.reason-section .reason-container .reason-box{
+    height: 270px;
+    width: 320px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #192247, #210e30);
+    border-radius: 15px;
+    position: relative;
+}
+.reason-container .reason-box h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.reason-box img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+/* FAQ SECTION */
+
+.faq-section {
+    max-width: 100%;
+    margin-top: 1rem;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.faq-section dt{
+    background-color: #2d2d2d;
+    padding: 30px;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    transition: background-color 0.8s ease;
+}
+
+.faq-section dt:hover {
+  background-color: #444;
+}
+
+.faq-section dt .icon {
+  font-size: 1.5rem;
+}
+
+.faq-section dd {
+    font-size: 1.5rem;
+    display: none;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #555;
+}
+
+.faq-section dt.active + dd {
+  display: block;
+}
+
+
+/* membership-section */
+
+.membership-section{
+    padding: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.membership-section p{
+    margin-bottom: 1rem;
+}
+
+.membership-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership-input input{
+    padding: .8rem;
+    width: 35rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+}
+
+.membership-input input::placeholder{
+    color: white;
+    opacity: .7;
+    font-size: 1.2rem;
+}
+
+.membership-input button{
+    margin-left: 10px;
+    padding: .7rem;
+    width: 12rem;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: .4s all;
+    cursor: pointer;
+}
+
+/* FOOTER SECTION */
+
+.footer{
+    width: 100%;
+    padding: 3rem 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.footer p{
+    margin-left: .7rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: .7;
+}
+
+.footer .footer-list{
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 1.5rem;
+    column-gap: 8rem;
+    margin-bottom: 1rem;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer-list a{
+    color: white;
+    opacity: .7;
+    font-size: 1rem;
+}
+
+.footer .language-drop-down{
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 10px;
+    padding: 10px;
+    background: none;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px){
+
+    header{
+        height: 110vh;
+        width: 100%;
+    }
+
+    .nav-bar {
+        padding: 1rem 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .nav-bar a{
+        margin-right: 1rem;
+    }
+
+    .nav-bar img{
+        margin-left: 3rem;
+        height: 4rem;
+        width: 7rem;
+    }
+
+    .nav-bar .nav-content{
+        display: flex;
+        gap: 1rem;
+        margin-right: 3rem;
+    }
+
+    .nav-bar .nav-content .language-drop-down{
+        display: none;
+    }
+    .nav-bar .nav-content .sign-in-btn{
+        padding: .5rem 1rem;
+    } 
+    
+
+    .banner-text{
+        margin-top: 3rem;
+        height: 550px;
+        width: 100%;
+        display: block;
+        padding: 1rem 3rem; 
+        text-align: center;   
+    }
+
+    .banner-text h1{
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .banner-text h2{
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .banner-text h3{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner-text p{
+        font-size: 1rem;
+        margin-top: .5rem;
+        margin-bottom: .6rem;
+    }
+
+    .banner-text .banner-input{
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+    }
+
+    .banner-text .banner-input input{
+        padding: 1.5rem;
+        width: 18rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        background: transparent;  
+    }
+
+    .banner-input .get-start{
+        padding: 1rem;
+        width: 14rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .main-content{
+        padding: 0rem 1rem;
+    }
+
+    .reason-section{
+       padding: 1rem;
+       margin-bottom: 1rem;
+    }
+
+    .reason-section h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .reason-section .reason-container{
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .reason-section .reason-container .reason-box{
+        height: 250px;
+        width: 400px;
+    }
+    .reason-container .reason-box h3{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .movie-section h1{
+        font-size: 2rem;
+    }
+
+    .movie-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;   
+    }
+
+    .faq-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+
+    .membership-section{
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .membership-section p{
+        font-size:1.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .membership-input{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .membership-input input{
+        padding: 1.5rem;
+        width: 20rem;
+    }
+
+    .membership-input button{
+        padding: 1rem;
+        width: 14rem;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100vh;
+        padding: 3rem 1rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .footer p{
+        margin-left: .7rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        opacity: .7;
+    }
+
+    .footer .footer-list{
+        width: 80%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 1.5rem;
+        column-gap: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-list a{
+        color: white;
+        opacity: .8;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+
+

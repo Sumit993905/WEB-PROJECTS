@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ Section with Description List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+
+    button{
+      padding: 1rem;
+      width: 8rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: .7s all;
+    }
+
+    button:hover{
+      background: linear-gradient(135deg,aqua,rgb(255, 0, 47));
+      color: white;
+      width: 10rem;
+      border-radius: 0px;
+      outline: none;
+      border-bottom: 1px solid rgb(255, 238, 0);
+    }
+
+    .faq-section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    dl {
+      border-top: 1px solid #555;
+    }
+
+    dt {
+      background-color: #2d2d2d;
+      padding: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid black;
+      transition: background-color 0.3s ease;
+    }
+
+    dt:hover {
+      background-color: #444;
+    }
+
+    dt .icon {
+      font-size: 1.5rem;
+    }
+
+    dd {
+      display: none;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #555;
+    }
+
+    dt.active + dd {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <button>Register</button>
+
+<marquee behavior="up" direction="up" >
+  
+
+</marquee>
+  <!-- <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <dl>
+      <dt><span>What is Netflix?</span> <i class="fa-solid fa-plus icon"></i></dt>
+      <dd>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more.</dd>
+
+      <dt><span>How much does Netflix cost?</span> <i class="fa-solid fa-plus icon"></i></dt>
+      <dd>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device for a fixed monthly fee. Plans range from ₹149 to ₹649 a month.</dd>
+
+      <dt><span>Where can I watch?</span> <i class="fa-solid fa-plus icon"></i></dt>
+      <dd>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web or on devices that support the Netflix app.</dd>
+
+      <dt><span>How do I cancel?</span> <i class="fa-solid fa-plus icon"></i></dt>
+      <dd>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks.</dd>
+
+      <dt><span>What can I watch on Netflix?</span> <i class="fa-solid fa-plus icon"></i></dt>
+      <dd>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more.</dd>
+
+      <dt><span>Is Netflix good for kids?</span> <i class="fa-solid fa-plus icon"></i></dt>
+      <dd>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly content.</dd>
+    </dl>
+  </div> -->
+
+
+  
+
+  <script>
+    const questions = document.querySelectorAll("dt");
+    questions.forEach((question) => {
+      question.addEventListener("click", () => {
+        question.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
